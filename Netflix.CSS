@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  .navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 20%;
+    z-index: 10;
+  }
+  
+  .navbar_netflix {
+    height: 100%;
+    width: 125px;
+  }
+  
+  .navbar_nav_items{
+    display: flex;
+    gap: 25px;  
+  }
+  
+  .netflix_logo{
+    width: 125%;
+    height: 125%;
+  }
+  
+  .language_drop_down{
+    background: transparent;
+    border: none;
+    color: inherit;
+  }
+  option {
+      font-weight: normal;
+      display: block;
+      padding-block-start: 0px;
+      padding-block-end: 1px;
+      min-block-size: 1.2em;
+      padding-inline: 2px;
+      white-space: nowrap;
+  }
+  
+  .dropdown_container{
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    color: inherit;
+  }
+  
+  .signin_button{
+    background-color: #dc030f;
+    color: white;
+    border: #dc030f;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    height: 35px;
+    width: 80px;
+  }
+  
+  .hero_bg_img_cont{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero_bg_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid gray;
+  }
+  
+  .hero_bg_overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 130%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero_card {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .hero_title {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  
+  .hero_subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;  
+  }
+  
+  .hero_desc {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  
+  .email{
+    width: 450px;
+    height: 60px;
+    color: white;
+    padding: 0.25rem 0.5 rem;
+    border-radius: 3px;
+    border-color: white;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .get_started{
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+  }
+  
+  .card-1,
+  .card-2{
+    width: 100%;
+    border-top: 8px rgb(69, 69, 69);
+    padding: 50px;
+    border-bottom: 8px solid rgb(69, 69, 69);
+    
+  }
+  .card-3{
+    width: 100%;
+    border-top: 8px rgb(69, 69, 69);
+    padding: 50px;
+  }
+  
+  .card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+  
+  }
+  .desc-1{
+    padding-left: 250px;
+  }
+  
+  .card-1 video{
+    position: relative;
+    width: 120%; 
+    height: 50%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    
+  }
+  
+  .card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    padding-left: 120px;
+    
+  }
+  
+  .style-cards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  
+  style-cards h3{
+    font-size: 2.2rem;
+    line-height: 2rem;
+    
+  }
+  
+  .card-2{
+    position: relative; 
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+  }
+  
+  .desc-2 {
+    padding-left: 350px;
+  }
+  
+  .card-2 img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 140px;
+  }
+  
+  .image-2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 130px;
+    height: 70%;
+    
+  }
+  
+  .card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+  }
+  
+  .desc-3{
+    padding-left: 50px;
+  }
+  
+  .img-3{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    padding-left: 50px;
+  }
+  
+  .card-3{
+    position: relative; 
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+  }
+  
+  .footer,
+  .footer a{
+    color: #9999;
+    font-size: 0.9rem;
+  }
+  
+  .footer p{
+    margin-bottom: 1.5rem;
+    padding-left: 50px;
+  }
+  
+  .footer .footer_cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding-left: 50px;
+  }
+  
+  .footer li{
+    line-height: 1.9;
+  }
